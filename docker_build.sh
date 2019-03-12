@@ -13,6 +13,10 @@ case $1 in
 esac
 
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+echo "Unzipping the data"
+
+unzip -u -d $SCRIPTDIR/data $SCRIPTDIR/data/challenge.zip
+
 echo "Building the docker image with Dockerfile defined at $SCRIPTPATH"
 
 if [ "$#" -ge 2 ]; then

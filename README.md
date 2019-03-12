@@ -30,6 +30,7 @@ PS: Ideally, we should be able to replicate your analysis from your submitted so
 ## Dependencies
 
 * Docker
+* unzip
 
 ## How to reproduce it
 
