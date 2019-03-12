@@ -25,3 +25,25 @@ You can find the dataset for this challenge in the following url:
 https://github.com/totvslabs/datachallenge/raw/master/challenge.zip
 
 PS: Ideally, we should be able to replicate your analysis from your submitted source-code, so please explicit the versions of the tools and packages you are using.
+
+
+## Dependencies
+
+* Docker
+
+## How to reproduce it
+
+Build the docker image:
+
+```bash
+sh docker_build.sh
+```
+
+and then get access to the notebook:
+
+```bash
+sh docker_develop.sh
+```
+
+You can open a browser now to localhost:8890:/?token=...
+(the token is given when you run docker_develop)
